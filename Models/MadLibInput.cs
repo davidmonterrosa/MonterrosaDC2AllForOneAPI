@@ -17,6 +17,5 @@ namespace MonterrosaDC2AllForOneAPI.Models
         public string? SpecialMoveName { get; set; }
         public string? RangeNumber { get; set; }
         public string? UnitOfDistance { get; set; }
-        public string? PlayAgainAnswer { get; set; }
     }
 }

@@ -18,7 +18,7 @@ namespace MonterrosaDC2AllForOneAPI.Controllers
         }
 
         [HttpGet]
-        [Route("Ask8Ball")]
+        [Route("Ask8Ball/{askQuestion}")]
         public string Magic8Ball(string askQuestion)
         {
             return _magic8BallServices.Magic8Ball(askQuestion);

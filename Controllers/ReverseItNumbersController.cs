@@ -18,7 +18,7 @@ namespace MonterrosaDC2AllForOneAPI.Controllers
         }
 
         [HttpGet]
-        [Route("ReverseItNumbers")]
+        [Route("ReverseItNumbers/{number}")]
         public string ReverseItNumbers(string number)
         {
             return _reverseItNumbersServices.ReverseItNumbers(number);

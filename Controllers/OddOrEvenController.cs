@@ -18,7 +18,7 @@ namespace MonterrosaDC2AllForOneAPI.Controllers
         }
 
         [HttpGet]
-        [Route("OddOrEven")]
+        [Route("OddOrEven/{numberToCheck}")]
         public string OddOrEven(string numberToCheck)
         {
             return _oddOrEvenServices.OddOrEven(numberToCheck);

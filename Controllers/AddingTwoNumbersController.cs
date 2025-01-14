@@ -18,7 +18,7 @@ namespace MonterrosaDC2AllForOneAPI.Controllers
         }
 
         [HttpGet]
-        [Route("AddNumbers")]
+        [Route("AddNumbers/{firstNumber}/{secondNumber}")]
         public string AddNumbers(string firstNumber, string secondNumber)
         {
             return _addingTwoNumbersServices.AddNumbers(firstNumber, secondNumber);

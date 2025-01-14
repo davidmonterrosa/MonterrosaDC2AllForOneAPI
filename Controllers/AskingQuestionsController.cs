@@ -18,7 +18,7 @@ namespace MonterrosaDC2AllForOneAPI.Controllers
         }
 
         [HttpGet]
-        [Route("AskQuestions")]
+        [Route("AskQuestions/{userName}/{time}")]
         public string AskQuestions(string userName, string time)
         {
             return _askingQuestionsServices.AskQuestions(userName, time);

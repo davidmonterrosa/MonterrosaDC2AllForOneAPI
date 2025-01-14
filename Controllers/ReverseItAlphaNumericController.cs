@@ -18,7 +18,7 @@ namespace MonterrosaDC2AllForOneAPI.Controllers
         }
 
         [HttpGet]
-        [Route("ReverseItAlphaNumeric")]
+        [Route("ReverseItAlphaNumeric/{inputString}")]
         public string ReverseItAlphaNumeric(string inputString)
         {
             return _reverseItAlphaNumericServices.ReverseItAlphaNumeric(inputString);

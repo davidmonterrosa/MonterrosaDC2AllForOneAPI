@@ -19,7 +19,7 @@ namespace MonterrosaDC2AllForOneAPI.Controllers
         }
 
         [HttpGet]
-        [Route("Hello")]
+        [Route("Hello/{userName}")]
         public string Hello(string userName)
         {
             return _helloWorldServices.GreetPerson(userName);

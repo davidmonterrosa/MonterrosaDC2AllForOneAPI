@@ -18,7 +18,7 @@ namespace MonterrosaDC2AllForOneAPI.Controllers
         }
 
         [HttpGet]
-        [Route("PickRestaurant")]
+        [Route("PickRestaurant/{restaurantCategory}")]
         public string RestaurantPicker(string restaurantCategory)
         {
             return _restaurantPickerServices.RestaurantPicker(restaurantCategory);
